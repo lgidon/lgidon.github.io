@@ -99,7 +99,7 @@
             transform: scale(1.025);
         }
 
-        .card-content {
+        .card-content, .card-bottom {
             padding: 20px 20px 24px;
             display: flex;
             flex-direction: column;
@@ -126,7 +126,7 @@
             display: flex;
             flex-wrap: wrap;
             gap: 8px;
-            margin-top: auto;
+            margin-top: 2px;
             padding-top: 6px;
         }
 
@@ -318,7 +318,9 @@
         }
 
         .project-actions {
-            margin-top: 20px;
+            /* margin-top: 20px; */
+            margin-top: auto; /* Pushes this element and everything below it to the bottom */
+            margin-bottom: -1; /* Adjust space between the link and tags as needed */
         }
 
         .other-projects-title {
@@ -337,9 +339,9 @@
             padding: 25px;
         }
         }
-        .project-actions {
+        /* .project-actions {
         margin-top: 14px;
-        }
+        } */
 
         .card-button {
             color: var(--accent);
