@@ -94,8 +94,9 @@
                 </div>
                 <div class="card-content">
                     <h2>Dolphin Boiler Monitor</h2>
-                    <p>A FastAPI and uv-powered service to monitor Dolphin smart water heater controller, complete with automated CI/CD testing, strict code coverage, and configurable polling.</p>
-                    <p>Fully documented (swagger) API endpoints</p>
+                    <p>Built to overcome several limitations of the official Dolphin boiler app: mobile-only access, limited historical analytics, and a lack of straightforward home-automation integration.</p>
+                    <p>The service provides cross-device access, historical telemetry, remote boiler control, and a foundation for integrating the boiler with other smart-home systems. It uses asynchronous background polling, persistent SQLite storage, and a FastAPI backend for live and historical data.</p>
+                    <p>The project also includes a GitHub Actions CI pipeline that automatically runs the test suite and Ruff quality checks, with branch protection and required pull-request validation before changes can be merged into main.</p>
                 <div class="project-actions">
                     <a
                         href="https://github.com/lgidon/Dolphin_Boiler_Monitor"
@@ -108,10 +109,12 @@
                 </div>
                 <div class="tags">
                     <span>Python</span>
-                    <span>API</span>
-                    <span>SQLite</span>
-                    <span>CI</span>
                     <span>FastAPI</span>
+                    <span>SQLAlchemy</span>
+                    <span>SQLite</span>
+                    <span>GitHub Actions</span>
+                    <span>Pytest</span>
+                    <span>Ruff</span>
                 </div>
                 </div>
                 </div>
